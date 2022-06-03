@@ -16,6 +16,12 @@ fun main() {
             0
         }
 
+        val input1 = if (parsedNumber1 == 0) {
+            getInput()
+        } else {
+            parsedNumber1
+        }
+
         val wendy = readLine() ?: "0"
         val parsedNumber2 = try {
             wendy.toInt()
@@ -23,6 +29,7 @@ fun main() {
             println("That's not a valid number")
             0
         }
+
 
         val input: Input = if (parsedNumber1 == 0 || parsedNumber2 == 0) {
             getInput()
